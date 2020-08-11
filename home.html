@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+
+<head>
+   <!-- Basic Page Needs
+      ================================================== -->
+   <title>HMAC Homepage</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <!-- CSS
+      ================================================== -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/main-color.css" id="colors">
+</head>
+
+<body class="transparent-header transparent-header5">
+   <!-- Wrapper -->
+   <div id="wrapper">
+      <!-- Header Container
+         ================================================== -->
+      <header id="header-container">
+         <!-- Header -->
+         <div id="header">
+            <div class="container container5">
+               <!-- Left Side Content -->
+               <div class="left-side">
+                  <!-- Logo -->
+                  <div id="logo">
+                     <a href="home.html"><img src="images/logo-hmac.png" data-sticky-logo="images/logo-hmac.png" alt=""></a>
+                  </div>
+                  <div class="hide-nonmob mob-login-main">
+                  <div class="mob-siginup-div" >
+                     <button href="#sign-in-dialog" class="sign-in text-hover mob-siginup popup-with-zoom-anim">Login</button>
+                  </div>
+                  <div class="mob-siginup-div">
+                     <button href="#login-dialog" class="sign-in text-hover mob-siginup popup-with-zoom-anim"
+                     >Sign-Up</button>
+                  </div>
+                  <div class="mmenu-trigger">
+                     <button class="hamburger hamburger--collapse" type="button">
+                        <span class="hamburger-box">
+                           <span class="hamburger-inner"></span>
+                        </span>
+                     </button>
+                  </div>
+                  </div>
+                  <!-- Main Navigation -->
+                
+                  <div class="clearfix"></div>
+                  <!-- Main Navigation / End -->
+               </div>
+               <!-- Left Side Content / End -->
+               <!-- Right Side Content / End -->
+               <div class="right-side">
+                   <!-- Main Navigation -->
+                   <nav id="navigation" class="style-1 navbar navbar-expand-lg" style="width: auto;">
+                     <ul id="responsive">
+                        <!-- <li class="hide-nonmob">
+                           <form class="">
+                              <input type="text" name="searchMenu" placeholder=" Search...">
+                           </form>
+                        </li> -->
+                        <li><a class="text-white current menu-arial-regular" href="home.html">Home</a></li>
+                        
+                        <li><a class="text-white menu-arial-regular" href="#">About</a></li>
+                        <li><a class="text-white menu-arial-regular" href="#">Industry</a></li>
+                        <li>
+                           <a class="text-white menu-arial-regular" href="#">REP Services</a></li>
+                        <li>
+                           <a class="text-white menu-arial-regular" href="#">Categories</a>
+                           <ul>
+                              <li><a class="text-hover menu-arial-regular-inner" href="#">Regulatory & Compliance</a></li>
+                              <li><a class="text-hover menu-arial-regular-inner" href="#">M&A Lawyers</a></li>
+                              <li><a class="text-hover menu-arial-regular-inner" href="#">Management Consultants</a></li>
+                              <li><a class="text-hover menu-arial-regular-inner" href="#">Accountants</a></li>
+                              <li><a class="text-hover menu-arial-regular-inner" href="#">M&A Advisors</a></li>
+                              <li><a class="text-hover menu-arial-regular-inner" href="#">Capital Markets Advisors</a></li>
+                              <li><a class="text-hover menu-arial-regular-inner" href="#">Special Situation Advisors </a></li>
+                              <li><a class="text-hover menu-arial-regular-inner" href="#">Private Wealth Management</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </nav>
+                  <button class="menu-arial-regular" style="background-color:transparent;border:none;border-radius: 35px; display:none;">
+                     <form class="mobilenone">
+                        <input type="text" name="search">
+                     </form>
+                  </button>
+                  <button href="#" class="button menu-arial-regular right-float sign-in popup-with-zoom-anim listing-address-center login-signup-header"
+                  >Login</button>
+                  <button href="#" class="button login-signup-header menu-arial-regular right-float sign-in popup-with-zoom-anim listing-address-center"
+                     >Sign up</button>
+               </div>
+               <!-- Right Side Content / End -->
+
+
+               <!-- Sign In Popup -->
+               <div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
+
+                  <div class="small-dialog-header">
+                     <h3>Sign-In</h3>
+                  </div>
+
+                  <!--Tabs -->
+                  <div class="sign-in-form style-1">
+                     <ul class="tabs-nav">
+                        <li class=""><a href="#tab1">Login</a></li>
+                        <li><a href="#tab2">Sign up</a></li>
+                     </ul>
+                     <div class="tabs-container alt">
+                        <!-- Login -->
+                        <div class="tab-content" id="tab1" style="display: none;">
+                           <form method="post" class="login">
+                              <span class="lost_password">
+                                 <div class=" margin-top-10">
+                                    <span class="non-mob-flex">
+                                       <input type="radio" name="negative" value="parent" checked>
+                                       <label> I am a Parent/Caregiver</label> 
+                                       </input>
+
+                                       <input type="radio" name="negative" value="provider">
+                                       <label> I am a Service Provider</label>
+                                       </input>
+                                    </span>
+                                 </div>
+                              </span>
+                              <p class="form-row form-row-wide">
+                                 <label for="username">Email Address
+                                    <i class="im im-icon-Male"></i>
+                                    <input type="text" class="input-text" name="username" id="username" value="" />
+                                 </label>
+                              </p>
+                              <p class="form-row form-row-wide">
+                                 <label for="password">Password
+                                    <i class="im im-icon-Lock-2"></i>
+                                    <input class="input-text" type="password" name="password" id="password" />
+                                 </label>
+                                 <span class="lost_password">
+                                    <div class="checkboxes margin-top-10">
+                                       <a href="#">Lost Your Password?</a>
+                                       <span style="float: right;">
+                                          <input id="remember-me" type="checkbox" name="check">
+                                          <label for="remember-me">Remember Me</label>
+                                       </span>
+
+                                    </div>
+                                 </span>
+                              </p>
+                              <div class="form-row centered">
+                                 <input type="submit" class="button border margin-top-5" name="login" value="Login" />
+                              </div>
+                           </form>
+                        </div>
+                        <!-- Register -->
+                        <div class="tab-content" id="tab2" style="display: none;">
+                           <form method="post" class="register">
+                              <p class="form-row form-row-wide">
+                                 <label for="password2">Role:
+                                    <select data-placeholder="Role" class="chosen-select">
+                                       <option>Select a Role</option>
+                                       <option>I am a Parent/Caregiver </option>
+                                       <option>I am a Service Provider</option>
+                                    </select>
+                                 </label>
+                              </p>
+                              <p class="form-row form-row-wide">
+                                 <label for="email2">Email Address:
+                                    <i class="im im-icon-Mail"></i>
+                                    <input type="text" class="input-text" name="email" id="email2" value="" />
+                                 </label>
+                              </p>
+                              <p class="form-row form-row-wide">
+                                 <label for="password1">Password:
+                                    <i class="im im-icon-Lock-2"></i>
+                                    <input class="input-text" type="password" name="password1" id="password1" />
+                                 </label>
+                              </p>
+                              <p class="form-row form-row-wide">
+                                 <label for="password2">Repeat Password:
+                                    <i class="im im-icon-Lock-2"></i>
+                                    <input class="input-text" type="password" name="password2" id="password2" />
+                                 </label>
+                              </p>
+
+                              <div class="form-row centered">
+                                 <input type="submit" class="button border fw margin-top-10" name="register"
+                                    value="Sign up" />
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Sign In Popup / End -->
+
+
+               <!-- Sign In Popup -->
+               <div id="login-dialog" class="zoom-anim-dialog mfp-hide">
+
+                  <div class="small-dialog-header-sign small-dialog-header">
+                     <h3>Sign-Up</h3>
+                  </div>
+
+                  <!--Tabs -->
+                  <div class="sign-in-form style-1">
+                     <ul class="tabs-nav">
+                        <li class=""><a href="#tab1">Sign up</a></li>
+                        <li><a href="#tab2">Login</a></li>
+                     </ul>
+                     <div class="tabs-container alt">
+                        <!-- Login -->
+                        <div class="tab-content" id="tab1" style="display: none;">
+                           <form method="post" class="register">
+                              <p class="form-row form-row-wide">
+                                 <label for="password2">Role:
+                                    <select data-placeholder="Role" class="chosen-select">
+                                       <option>Select a Role</option>
+                                       <option>I am a Parent/Caregiver </option>
+                                       <option>I am a Service Provider</option>
+                                    </select>
+                                 </label>
+
+                              </p>
+                              <p class="form-row form-row-wide">
+                                 <label for="email2">Email Address:
+                                    <i class="im im-icon-Mail"></i>
+                                    <input type="text" class="input-text" name="email" id="email2" value="" />
+                                 </label>
+                              </p>
+                              <p class="form-row form-row-wide">
+                                 <label for="password1">Password:
+                                    <i class="im im-icon-Lock-2"></i>
+                                    <input class="input-text" type="password" name="password1" id="password1" />
+                                 </label>
+                              </p>
+                              <p class="form-row form-row-wide">
+                                 <label for="password2">Repeat Password:
+                                    <i class="im im-icon-Lock-2"></i>
+                                    <input class="input-text" type="password" name="password2" id="password2" />
+                                 </label>
+                              </p>
+
+                              <div class="form-row centered">
+                                 <input type="submit" class="button border fw margin-top-10" name="register"
+                                    value="Sign up" />
+                              </div>
+                           </form>
+                        </div>
+                        <!-- Register -->
+                        <div class="tab-content" id="tab2" style="display: none;">
+                           <form method="post" class="login">
+                               <span class="lost_password">
+                                 <div class=" margin-top-10">
+                                    <span class="non-mob-flex">
+                                       <input type="radio" name="negative" value="parent" checked>
+                                       <label> I am a Parent/Caregiver</label> 
+                                       </input>
+
+                                       <input type="radio" name="negative" value="provider">
+                                       <label> I am a Service Provider</label>
+                                       </input>
+                                    </span>
+                                 </div>
+                              </span>
+                              <p class="form-row form-row-wide">
+                                 <label for="username">Email Address
+                                    <i class="im im-icon-Male"></i>
+                                    <input type="text" class="input-text" name="username" id="username" value="" />
+                                 </label>
+                              </p>
+                              <p class="form-row form-row-wide">
+                                 <label for="password">Password
+                                    <i class="im im-icon-Lock-2"></i>
+                                    <input class="input-text" type="password" name="password" id="password" />
+                                 </label>
+                                 <span class="lost_password">
+                                    <div class="checkboxes margin-top-10">
+                                       <a href="#">Lost Your Password?</a>
+                                       <span style="float: right">
+                                          <input id="remember-me" type="checkbox" name="check">
+                                          <label for="remember-me">Remember Me</label>
+                                       </span>
+
+                                    </div>
+                                 </span>
+                              </p>
+                              <div class="form-row centered">
+                                 <input type="submit" class="button border margin-top-5" name="login" value="Login" />
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Sign In Popup / End -->
+            </div>
+         </div>
+         <!-- Header / End -->
+      </header>
+      <div class="clearfix"></div>
+      <!-- Header Container / End -->
+      <!-- Banner
+         ================================================== -->
+      <div class="main-search-container dark-overlay" data-background-image="images/banner.jpg" >
+         <div class="main-search-inner">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <h2 class="TeX-header-bold" style="color: #fff;text-align: center!important;">
+                        An M&A Platform to <br> Reduce Costs & Optimize Results 
+                        <!-- Typed words can be configured in script settings at the bottom of this HTML file -->
+                        <!-- <span class="typed-words"></span> -->
+                     </h2>
+                     <!-- <h4 class="TeX-header-regular" style="color: #fff;">Find professonals that specialize in caring for children on the autism spectrum</h4> -->
+                     <div class="main-search-input" style="margin-bottom: 40px;background: transparent!important;border-bottom:0.4px solid #fff!important;">
+                        
+                        <div class="main-search-input-item">
+                           <input id="autocomplete-input" class="menu-arial-regular-inner" type="text" placeholder="Search Professionals By Name">
+                        </div>
+                        <div class="main-search-input-item">
+                           <input id="autocomplete-input" class="menu-arial-regular-inner" type="text" placeholder="Search By Category">
+                        </div>
+                        <div class="main-search-input-item">
+                           <input id="autocomplete-input" class="menu-arial-regular-inner" type="text" placeholder="Search By Location">
+                        </div>
+                        
+                     </div>
+                     <button class="button listing-address-center menu-arial-regular-inner"
+                           onclick="window.location.href='#'" style="background-color: #fff;color:#5faae0;border-radius: 0px;display: block;
+                           margin-left: auto;
+                           margin-right: auto;">Search</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Video -->
+      </div>
+      <!-- Content
+         ================================================== -->
+      <!-- Parallax -->
+      <div class="parallax"
+         data-background-color="#233662"
+         data-img-width="800"
+         data-img-height="505">
+
+         <!-- Infobox -->
+         <div class="text-content text-content1 white-font">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8 col-sm-12">
+                     <h2>Sign Up For Our Newsletter</h2>
+                     <p>Get Industry Updates, M&A Announcments, and More!</p>
+                  </div>
+                  <div class="col-lg-4 col-sm-12"><a href="#" class="button newsletter margin-top-25">Click here for Industry Updates</a></div>
+               </div>
+
+            </div>
+         </div>
+      <!-- Infobox / End -->
+      </div>
+      <!-- Parallax / End -->
+      <section class="fullwidth padding-top-30 padding-bottom-30" data-background-color="#fff">
+         <!-- Info Section -->
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h3 class="headline centered headline-extra-spacing">
+                     <a href="home.html"><img src="images/logo-icon.png" style="margin-bottom: 10px;" data-sticky-logo="images/logo-icon.png" alt=""></a>
+                     <strong class="headline-with-separator TeX-user royal-blue">What is HMAC?</strong>
+                     <span class="margin-top-25 TeX-header-regular">HMAC is a directory of distinct M&A professionals (lawyers, investment bankers, healthcare consultants, accountants, and wealth managers).  HMAC reduces transaction costs by managing “requests for proposals” from each professional. For companies looking to sell their business, HMAC can save over $250,000 in transaction fees by picking the right partners while negotiating favorable rates for the Seller. We call this “Transaction Coordination Services.”
+
+                       <br><br> Here at HMAC, we seek to provide you value through two products:</span>
+                  </h3>
+               </div>
+               <div class="row icons-container">
+                  <!-- Stage -->
+                  <div class="col-md-4 col-lg-offset-2">
+                     <div class="icon-box-2 with-line">
+                        <h3 class="margin-top-25 margin-bottom-5 TeX-header-bold centered-mob royal-blue text-white">Directory</h3>
+                        <h2 class="btmline center-go margin-bottom-25"></h2> 
+                        <i class="fa fa-search"></i>
+                        <p>Search through only the top Healthcare M&A Professionals to find the right fit for your 
+                           company! <span class="royal-blue">Search Now >></span></p>
+                     </div>
+                  </div>
+            
+                  <!-- Stage -->
+                  <div class="col-md-4">
+                     <div class="icon-box-2 with-line">
+                        <h3 class="margin-top-25 margin-bottom-5 TeX-header-bold centered-mob royal-blue text-white">Request For Proposal</h3>
+                        <h2 class="btmline center-go margin-bottom-25"></h2> 
+                        <i class="fa fa-send"></i>
+                        <p>Hire Professionals straight from our directory or have our in-house experts find the right pick for you!<span class="royal-blue"> Learn More >></span></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Info Section / End -->
+      </section>
+      <section class="fullwidth padding-top-30" data-background-color="#fff">
+         <!-- Fullwidth Section / End -->
+         <div class="container margin-top-30">
+            <div class="row">
+               <div class="col-lg-6 col-md-6 col-sm-12 ">
+                  <div style="margin-top: 15%;" class="hide-mob"></div>
+                  <h1 class="margin-top-25 TeX-header-bold centered-mob royal-blue text-white">Search Through Only The Top Professionals </h1>
+                  <h2 class="btmline-white"></h2>
+                  <p class="centered-mob text-white royal-blue TeX-body">Umami messenger bag sustainable, kinfolk XOXO try-hard etsy readymade vape tbh selvage DIY hoodie letterpress. Flexitarian put a bird on it knausgaard paleo. Disrupt kogi viral crucifix four loko snackwave distillery trust fund DIY literally. Echo park crucifix listicle, kinfolk ugh affogato edison bulb umami man braid salvia air plant art party bicycle rights.
+                     <br>
+                     Lorem Ipsum:
+                     <br>
+                     - Lorem Ipsum<br>
+                     - Lorem Ipsum<br>
+                     - Lorem Ipsum
+                     
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div>
+                     <img src="images/desktop-banner.png"
+                        style="height: 500px; display: block;margin-left: auto;margin-right: auto;" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Parallax -->
+      <div class="parallax banner-small"
+      data-background="images/banner-small.jpg"
+      data-color="#233662"
+      data-color-opacity="0.6"
+      data-img-width="800"
+      data-img-height="505">
+
+         <!-- Infobox -->
+         <div class="text-content white-font">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8 col-sm-8 col-lg-offset-2">
+                     <h2>Search Our Directory of M&A Professionals</h2>
+                     <h2>Across the Continuum</h2>
+                     <a href="#" class="button small-banner-btn margin-top-25">Search</a>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+         <!-- Infobox / End -->
+
+      </div>
+      <!-- Parallax / End -->
+
+      <section class="fullwidth padding-top-30 padding-bottom-30" data-background-color="#fff">
+         <!-- Fullwidth Section / End -->
+         <div class="container margin-top-30 margin-bottom-65">
+            <div class="row">
+               <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div>
+                     <img src="images/mobile-screens.png"
+                        style="height: 400px; display: block;margin-left: auto;margin-right: auto;" alt="">
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-12" style="text-align: right;">
+                  <div style="margin-top: 15%;" class="hide-mob"></div>
+                  <h1 class="margin-top-25 TeX-header-bold centered-mob text-white royal-blue">Hire Professionals straight from our directory or have our in-h</h1>
+                  <h2 class="btmline right-go"></h2> 
+                  <p class="centered-mob TeX-body royal-blue">Umami messenger bag sustainable, kinfolk XOXO try-hard etsy readymade vape tbh selvage DIY hoodie letterpress. Flexitarian put a bird on it knausgaard paleo. Disrupt kogi viral crucifix four loko snackwave distillery trust fund DIY literally. Echo park crucifix listicle, kinfolk ugh affogato edison bulb umami man braid salvia air plant art party bicycle rights.
+                    
+               </div>
+               
+            </div>
+         </div>
+      </section>
+      <!-- Footer
+         ================================================== -->
+         <section class="fullwidth footer-img dark-overlay-blue " data-background-image="images/footer.jpg">
+            <!-- Fullwidth Section / End -->
+            <div class="main-search-inner">
+               <h2 style="text-align:center;color:#fff;padding-top:100px;font-weight: bolder;">Need To Sell Your Business?</h2>
+               <h2 style="text-align:center;color:#fff;font-weight: bolder;">Let Us Help!</h2>
+               <h1 style="text-align:center;color:#fff;">
+                  <a href="#" class="button small-banner-btn margin-top-25" style="font-weight: bolder;color:#233662!important;background-color:#fff!important;">Sign Up Now!</a>
+               </h1>
+            </div>
+            <div class="container" style="margin-top:200px;">
+               <div class="row">
+                  <div class="col-md-6 col-lg-offset-3 col-sm-12 margin-top-40">
+                     <ul class="footer-links my-footer">
+                        <li><a href="#">Top </a></li>
+                        <li><a href="#">Home </a></li>
+                        <li><a href="#">About </a></li>
+                        <li><a href="#">Industry </a></li>
+                        <li><a href="#">RFP </a></li>
+                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#">Log In</a></li>
+                     </ul> 
+                  </div>
+               </div>
+               <div class="clearfix"></div>
+            </div>
+         </section>
+         <!-- Parallax -->
+      <div class="parallax"
+      data-background-color="#233662"
+      data-img-width="800"
+      data-img-height="505">
+
+      <!-- Infobox -->
+      <div class="text-content text-content1 white-font">
+         <div class="container" style="height: 50px;">
+         </div>
+      </div>
+   <!-- Infobox / End -->
+   </div>
+   <!-- Parallax / End -->
+         <!-- Footer / End -->
+      <!-- Back To Top Button -->
+   </div>
+   <!-- Wrapper / End -->
+   <!-- Scripts
+      ================================================== -->
+   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
+   <script type="text/javascript" src="scripts/jquery-migrate-3.1.0.min.js"></script>
+   <script type="text/javascript" src="scripts/mmenu.min.js"></script>
+   <script type="text/javascript" src="scripts/chosen.min.js"></script>
+   <script type="text/javascript" src="scripts/slick.min.js"></script>
+   <script type="text/javascript" src="scripts/rangeslider.min.js"></script>
+   <script type="text/javascript" src="scripts/magnific-popup.min.js"></script>
+   <script type="text/javascript" src="scripts/waypoints.min.js"></script>
+   <script type="text/javascript" src="scripts/counterup.min.js"></script>
+   <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+   <script type="text/javascript" src="scripts/tooltips.min.js"></script>
+   <script type="text/javascript" src="scripts/custom.js"></script>
+   <!-- Leaflet // Docs: https://leafletjs.com/ -->
+   <script src="scripts/leaflet.min.js"></script>
+   <!-- Leaflet Maps Scripts -->
+   <script src="scripts/leaflet-markercluster.min.js"></script>
+   <script src="scripts/leaflet-gesture-handling.min.js"></script>
+   <script src="scripts/leaflet-listeo.js"></script>
+   <!-- Leaflet Geocoder + Search Autocomplete // Docs: https://github.com/perliedman/leaflet-control-geocoder -->
+   <script src="scripts/leaflet-autocomplete.js"></script>
+   <script src="scripts/leaflet-control-geocoder.js"></script>
+   <!-- Typed Script -->
+   <script type="text/javascript" src="scripts/typed.js"></script>
+   <script>
+      $(document).ready(function () {
+         var navListItems = $('div.setup-panel div a'),
+            allWells = $('.setup-content'),
+            allNextBtn = $('.nextBtn'),
+            allPrevBtn = $('.prevBtn');
+
+         allWells.hide();
+
+         navListItems.click(function (e) {
+            e.preventDefault();
+            var $target = $($(this).attr('href')),
+               $item = $(this);
+
+            if (!$item.hasClass('disabled')) {
+               navListItems.removeClass('btn-primary myclass').addClass('btn-default');
+               $item.addClass('btn-primary myclass');
+               allWells.hide();
+               $target.show();
+               $target.find('input:eq(0)').focus();
+            }
+         });
+
+         allPrevBtn.click(function () {
+            var curStep = $(this).closest(".setup-content"),
+               curStepBtn = curStep.attr("id"),
+               prevStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().prev().children("a");
+
+            prevStepWizard.removeAttr('disabled').trigger('click');
+         });
+
+         allNextBtn.click(function () {
+            var curStep = $(this).closest(".setup-content"),
+               curStepBtn = curStep.attr("id"),
+               nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+               curInputs = curStep.find("input[type='text'],input[type='url']"),
+               isValid = true;
+
+            $(".form-group").removeClass("has-error");
+            for (var i = 0; i < curInputs.length; i++) {
+               if (!curInputs[i].validity.valid) {
+                  isValid = false;
+                  $(curInputs[i]).closest(".form-group").addClass("has-error");
+               }
+            }
+
+            if (isValid)
+               nextStepWizard.removeAttr('disabled').trigger('click');
+         });
+
+         $('div.setup-panel div a.btn-primary').trigger('click');
+
+
+         $('first-btn-circle').on('click', function () { $(this).removeClass('btn-default').addClass('btn-primary'); });
+      });
+      var typed = new Typed('.typed-words', {
+         strings: ["'Speech Therapist'", "'Dentist'", "'Physical Therapist'", "'Babysitter'", "'Occupational Therapist'", "'Pediatrician'", "'Autism School'", "'ABA Therapist'", "'Tutor'",],
+         typeSpeed: 80,
+         backSpeed: 80,
+         backDelay: 4000,
+         startDelay: 1000,
+         loop: true,
+         showCursor: true
+      });
+   </script>
+   <!-- Style Switcher
+      ================================================== -->
+   <script src="scripts/switcher.js"></script>
+   <div id="style-switcher">
+      <h2>Color Switcher <a href="#"><i class="sl sl-icon-settings"></i></a></h2>
+      <div>
+         <ul class="colors" id="color1">
+            <li><a href="#" class="main" title="Main"></a></li>
+            <li><a href="#" class="blue" title="Blue"></a></li>
+            <li><a href="#" class="green" title="Green"></a></li>
+            <li><a href="#" class="orange" title="Orange"></a></li>
+            <li><a href="#" class="navy" title="Navy"></a></li>
+            <li><a href="#" class="yellow" title="Yellow"></a></li>
+            <li><a href="#" class="peach" title="Peach"></a></li>
+            <li><a href="#" class="beige" title="Beige"></a></li>
+            <li><a href="#" class="purple" title="Purple"></a></li>
+            <li><a href="#" class="celadon" title="Celadon"></a></li>
+            <li><a href="#" class="red" title="Red"></a></li>
+            <li><a href="#" class="brown" title="Brown"></a></li>
+            <li><a href="#" class="cherry" title="Cherry"></a></li>
+            <li><a href="#" class="cyan" title="Cyan"></a></li>
+            <li><a href="#" class="gray" title="Gray"></a></li>
+            <li><a href="#" class="olive" title="Olive"></a></li>
+         </ul>
+      </div>
+   </div>
+   <!-- Style Switcher / End -->
+</body>
+
+</html>
